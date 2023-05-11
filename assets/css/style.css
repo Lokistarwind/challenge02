@@ -1,0 +1,175 @@
+/*grabbed code snippets from universal class box sizing*/
+* {
+    box-sizing: border-box;
+  }
+
+  header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 10px;
+    background: lightskyblue;
+    color: black;
+  }
+  
+   /*grabbed code snippets from class exercises for row, column and card.
+   I use snippets of it in some sections to make each part of the webpage consistent.
+   */
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    border-style: none;
+    border-width: 1px;
+    padding: 10px;
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+
+  /* Made specific speicifications for the application boxes in the work section of the page*/
+  .app-card{
+    border-style: solid;
+    border-width: 3px;
+    border-color: skyblue;
+    padding: 0px;
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+  /* Main application*/
+  #application1{
+    width: 100%;
+  }
+  /* Supplement applications*/
+  #application2{
+    margin: 0 1% 0 0;
+    width: 49%;
+  }
+  #application4{
+    margin: 0 1% 0 0;
+    width: 49%;
+  }
+  #application3{
+    margin: 0 0 0 1%;
+    width: 49%;
+  }
+  #application5{
+    margin: 0 0 0 1%;
+    width: 49%;
+  }
+
+
+    /*added a margin for profile pic */
+  .portfoliopicture{
+    margin: 0 5% 0 0;
+  }
+
+  /*styled the hyperlink*/
+a:link{
+  color:black;
+  background-color: transparent;
+  text-decoration: darkblue underline;
+}
+
+a:visited{
+  color:black;
+  background-color: transparent;
+  text-decoration: darkblue underline;
+}
+
+/*modified text decoration for application links*/
+a#applications{
+  text-decoration:none;
+}
+
+
+
+  nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: lightskyblue;
+  padding: 10px;
+  }
+
+  main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    background: rgb(248, 248, 248);
+    padding: 10px;
+  }
+/*created a margin for the navigation bar*/
+  nav .NavAboutMe, .NavWork, .NavContactMe{
+
+    margin: 0 5% 0 0;
+    
+  }
+
+/*stylized the headers in the main section of the page*/
+  #Header-About-Me, #Header-Work, #Header-Contact-Me{
+    
+    border: 2px solid darkblue;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+    font-size: 20px;
+    text-align: right;
+    width: 25%;
+  }
+  /*adjusted the main content to take up the remaining space of the window*/
+  #About-Me, #Work, #Contact-Me{
+    width: 75%;
+  }
+  
+/*adjusted the contact me part so it rows and wraps*/
+  #Contact-Me{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
+  ul
+  {
+    padding:0 0 0 0;
+    list-style-type: none; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  li{
+    text-decoration: underline;
+    text-decoration-color: darkblue;
+    font-size: 20px;
+    margin: 0 10px 0 0;
+  }
+
+  /*Basic media query
+  Couldn't figure out how to column the page. Kept buugging when I tried
+  */
+  @media only screen and (max-width: 768px){
+
+    header{
+      background-color: rgb(136, 239, 158);
+    }
+    nav{
+      background-color: rgb(136, 239, 158);
+    }
+    main{
+      background-color: rgb(157, 167, 237);
+    }
+    
+  }
+  
+

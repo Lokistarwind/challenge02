@@ -13,3 +13,8 @@ N/A
 
 
 You can use this code to look out a layout of what you can use to make a portfolio for job seeking and to understand fundemental concepts in css styling when building a page.
+
+## Credits
+For this challenge assignment, I used some code snippets from the class activities for the css class of row, column and card. I also used the universal class box sizing function. The classes used were used as a foundation to structure and build upon the webpage.
+
+The portfolio image is concept art owned by capcom that I reworked and use as an avatar
